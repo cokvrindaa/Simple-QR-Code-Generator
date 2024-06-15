@@ -11,7 +11,7 @@
 
 - 🧑‍💻 Teknologi yang di pakai **Html, Tailwindcss, Pure javascript**
 
-- 👁️ Link Preview 
+- 👁️ Link Preview https://supersimpleqrcodegenerator.netlify.app/
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
