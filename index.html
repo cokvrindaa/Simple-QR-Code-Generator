@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple QR Code Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="dark:bg-slate-950">
+    <div class="container shadow-lg m-auto p-5 rounded-lg dark:shadow-md dark:shadow-slate-300">
+      <h1 class="text-lg font-bold text-center dark:text-white">Simple QR Code Generator</h1>
+      <input
+        type="text"
+        id="input"
+        class="w-full shadow-md p-1 focus:ring-1 rounded-md focus:border-sky-600 focus:outline-none focus:rounded-md placeholder:px-1 invalid:text-red-600 invalid:focus:ring-red-600 peer dark:shadow-slate-300 dark:shadow-md "
+        placeholder="Masukin Sesuatu!"
+      />
+
+      <div class="flex flex-col items-center ">
+        <img src="" alt="" id="gambarqr" class="shadow-md rounded-md mb-4" />
+        <div class="flex justify-center space-x-4 -mt-1.5">
+          <button
+            onclick="konversi()"
+            class="shadow-lg h-8 w-20 sm:hover:bg-green-500 rounded-lg dark:border dark:bg-white dark:shadow-md dark:shadow-slate-300"
+          >
+            Konversi
+          </button>
+          <button
+            id="btn"
+            onclick="download()"
+            class="shadow-lg h-8 w-28 sm:hover:bg-green-500 rounded-lg dark:border dark:bg-white dark:shadow-md dark:shadow-slate-300"
+          >
+            Download
+          </button>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-sm mt-4 dark:text-white">
+      By @cokvrindaa at github
+    </p>
+    <script src="index.js"></script>
+    <script src="FileSaver.min.js"></script>
+  </body>
+</html>
